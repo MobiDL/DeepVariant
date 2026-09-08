@@ -1,4 +1,4 @@
-# MobiDL alignmentSR
+# MobiDL DeepVariant
 
 **WDL workflow for short-read alignment in capture-based panel sequencing.**
 
