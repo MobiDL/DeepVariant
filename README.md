@@ -1,6 +1,6 @@
 # MobiDL DeepVariant
 
-**WDL workflow for short-read alignment in capture-based panel sequencing.**
+**WDL workflow for short-read variant calling using deepvariant in capture-based panel sequencing.**
 
 ---
 
