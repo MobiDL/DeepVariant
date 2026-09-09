@@ -102,7 +102,7 @@ DeepVariant/
 
 ## ⚙️ Workflow Steps
 
-<img height="840" alt="alignment" src="https://github.com/user-attachments/assets/7ff00e7d-26f4-43ca-9145-a2aace1b4890" />
+<img height="840" alt="deepvariant" src="https://github.com/user-attachments/assets/edb45e8a-f98b-47a1-9e02-f6b506260ff3" />
 
 
 ---
