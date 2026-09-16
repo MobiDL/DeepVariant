@@ -24,4 +24,4 @@ jobs:
           chmod +x womtool-90.jar
 
       - name: Check Syntax
-        run: java -jar womtool-90.jar validate -i tests/test.json deepvariant.wdl
+        run: java -jar womtool-90.jar validate -i tests/test.json DeepVariant.wdl
