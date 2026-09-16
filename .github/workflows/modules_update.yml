@@ -23,18 +23,11 @@ jobs:
       - name: Update submodules to latest releases
         id: update
         run: |
-          # Initialise un flag pour détecter les changements
           UPDATED=false
-
-          # Parcourt chaque sous-module
-
-            # Vérifie s'il y a une nouvelle release
           LATEST_RELEASE=$(git -C modules ls-remote --tags --sort="v:refname" origin | grep -E "refs/tags/v[0-9]+\.[0-9]+\.[0-9]+" | tail -n 1 | cut -d"/" -f3)
 
           if [ -n "$LATEST_RELEASE" ]; then
             echo "Checking submodule modules for new release: $LATEST_RELEASE"
-
-            # Récupère la version actuelle
             CURRENT_COMMIT=$(git -C modules rev-parse HEAD)
             LATEST_COMMIT=$(git -C modules rev-parse $LATEST_RELEASE)
 
@@ -45,7 +38,6 @@ jobs:
             fi
           fi
 
-          # Si des mises à jour ont été faites
           if [ "$UPDATED" = true ]; then
             git add .
             git commit -m "chore: update 'modules' to release $LATEST_RELEASE [skip ci]"
