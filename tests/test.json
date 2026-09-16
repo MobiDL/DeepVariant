@@ -1,0 +1,7 @@
+{
+	"DeepVariant.sample": "test",
+	"DeepVariant.bed": "tests/bed/test.bed",
+	"DeepVariant.fasta": "tests/fasta/chr.fa",
+    "DeepVariant.bam": "tests/bam/sample.bam",
+	"DeepVariant.outputPath": "output_DeepVariant"
+}
